@@ -1,2 +1,2 @@
 # Ethermonitor
-A discord bot to monitor ethermine mining statistics
+(Logo)[Logo.png]A discord bot to monitor ethermine mining statistics
