@@ -30,6 +30,7 @@ Displays a list of commands
 #### Usage
 
 > --register 58c3459Ec305F5b731Ba359744f9EeB486626892
+
 > --register 0x58c3459Ec305F5b731Ba359744f9EeB486626892
 
 Registers an etherium address to your account, this means that you don't need to provide an address for other commands
@@ -43,7 +44,9 @@ Registers an etherium address to your account, this means that you don't need to
 #### Usage
 
 > --stats
+
 > --stats 0x58c3459Ec305F5b731Ba359744f9EeB486626892
+
 > --s 0x58c3459Ec305F5b731Ba359744f9EeB486626892
 
 #### Preview
