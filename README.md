@@ -1,5 +1,4 @@
 # Ethermonitor
-<<<<<<< HEAD
 
 ![Logo](./Logo.png)
 
@@ -70,6 +69,3 @@ Earnings:
 ```
 
 Shows Etherium mining statistics for miners on the ethermine pool
-=======
-(Logo)[Logo.png]A discord bot to monitor ethermine mining statistics
->>>>>>> 66d6817de0f5dfe1c59cb79c52e36aa64e9477ec
