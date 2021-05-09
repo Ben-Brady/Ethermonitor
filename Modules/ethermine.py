@@ -21,8 +21,7 @@ class _Miner(NamedTuple):       # A miner stats struct (Namedtuple = struct)
     Unpaid      : int = 0       # The unpaid amount
     PayoutErn   : int = 0       # The amount payed out
 
-def _CacheWallet(Address,Stats,SessionName):
-    Session = logging.getLogger(SessionName)
+def _CacheWallet(Address,Stats,Session):
     Session.info(f'Added address to cache "{Address}"')
     
     Cache[Address] = Stats
@@ -33,14 +32,12 @@ def _CacheWallet(Address,Stats,SessionName):
     
     Session.info(f'Removed address from cache "{Address}"')
 
-def GetStats(Address,SessionName):
+def GetStats(Address,Session):
     def Get(Index):
         var = JSON.get(Index,0) # Get the index from the JSON,
         if var == None:         # If the Var is none
             var = 0             # Replace it with a 0
         return var              # Then return it
-    
-    Session = logging.getLogger(SessionName)
     
     if Address in Cache:         # If the wallet is already cached
         Session.info(f'Address already in cache "{Address}"')
@@ -79,5 +76,5 @@ def GetStats(Address,SessionName):
         PayoutErn   = PayoutTotal
         )
     
-    Thread(target=_CacheWallet,args=[Address,Stats,SessionName]).start()
+    Thread(target=_CacheWallet,args=[Address,Stats,Session]).start()
     return Stats
