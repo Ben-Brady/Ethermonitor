@@ -2,7 +2,7 @@
 
 ![Logo](./Logo.png)
 
-A Discord Bot for Monitoring Etherium Mining Statistics
+A Discord Bot for Monitoring Ethermine Mining Statistics
 
 ## Commands
 
